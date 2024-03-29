@@ -16,6 +16,7 @@ nmap gI :action ReSharperGotoImplementation<CR>
 
 " LSP
 nmap <leader>la :action GotoAction<CR>
+nmap <leader>rn :action RenameElement<CR>
 
 " Windows
 nmap <leader>w :action SaveAll<CR>
