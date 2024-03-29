@@ -7,8 +7,12 @@ set smartcase
 set incsearch
 set wrapscan
 
+" Hybrid line numbers
+set number relativenumber
+set nu rnu
+
 " IDEA fix (sometimes different for like rider)
-nmap gI :action ReSharperGotoImplementation
+nmap gI :action ReSharperGotoImplementation<CR>
 
 " LSP
 nmap <leader>la :action GotoAction<CR>
@@ -30,7 +34,7 @@ nmap <c-h> :action PrevSplitter<CR>
 nmap <leader>m :action ToggleBookmark<CR>
 
 " Debugger
-nmap <leader>b :action ToggleLineBreakpoint<CR>
+nmap <leader>db :action ToggleLineBreakpoint<CR>
 
 " Path Finding
 nmap <leader>f :action GotoFile<CR>
